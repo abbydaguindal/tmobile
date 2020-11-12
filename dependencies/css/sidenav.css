@@ -1,0 +1,17 @@
+.sidenav { height: 100%; width: 200px; position: fixed; z-index: 1; top: 0; left: 0; background-color: #f1f1f1; overflow-x: hidden; transition: 0.5s; padding-top: 65px;}
+.sidenav a { padding: 8px 8px 5px 20px; text-decoration: none; font-size: 1rem; color: #4b4b4b; display: block; transition: 0.3s;}
+.sidenav a:hover {  color: #000;}
+#main { margin-left: 200px; padding: 25px; padding-top: 65px;}
+
+/* code
+<div class="sidenav"> 
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>
+</div>
+
+<div id="main">
+   <h2>Content here</h2>
+</div>
+*/
