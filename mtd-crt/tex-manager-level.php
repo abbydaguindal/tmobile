@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Summary</title>
+        <title>Expert to Tex Manager Level</title>
 
         <!--Boostrap-->
         <link rel="stylesheet" href="../dependencies/bootstrap-4.5.0/dist/css/bootstrap.min.css">
@@ -16,13 +16,12 @@
 
        <style>
         label {font-weight:600; font-size: 12px;}
-        select[multiple] { font-size: 12px;}
+        select[multiple] { font-size: 12px; }
         .primary_table {background-color: rgb(31,78,120); color:white}
-        .primary_table_color {background-color: rgb(221,235,247);}
-        table thead th, tfoot th{font-weight:600; font-size: 14px; }
-        table thead  tr, td{font-size: 14px;}
+        .primary_table_footer {background-color: rgb(221,235,247);}
+        table thead th, tfoot th{font-size: 12px; text-align:center }
+        table thead  tr, td{font-size: 12px;}
 
-       
         td.details-control {background: url('../assets/images/plus.png') no-repeat center center; cursor: pointer; background-size: 17px; margin:auto;  }
         tr.shown td.details-control { background: url('../assets/images/minus.png') no-repeat center center; background-size: 17px; margin:auto;}
 
@@ -125,15 +124,7 @@
                         <div class="card-body p-2">
                             <div class="row">
 
-                                <div class="col-sm-2 form-group">
-                                    <label for="covidStatusLabel">Covid Status</label>
-                                    <select multiple  class="form-control" id="covidStatus">
-                                        <option value="Onsite">Onsite</option>
-                                        <option value="WAHA">WAHA</option>
-                                    </select>
-                                </div>
-
-                                <div class="col-sm-2 form-group">
+                                <div class="col form-group">
                                     <label for="LOBLabel">LOB</label>
                                     <select multiple  class="form-control" id="LOB">
                                         <option value="AccountExpert">Account Expert</option>
@@ -142,19 +133,26 @@
                                     </select>
                                 </div>
 
-                                <div class="col-sm-2 form-group">
-                                    <label for="PhaseLabel">Phase</label>
-                                    <select multiple  class="form-control" id="Phase">
-                                        <option value="Production">Production</option>
-                                        <option value="Project">Project</option>
-                                        <option value="Supervisor">Supervisor</option>
-                                        <option value="TCC WK1">TCC WK1</option>
-                                        <option value="TCC WK2">TCC WK2</option>
-                                        <option value="T-Voice">T-Voice</option>
+                                <div class="col form-group">
+                                    <label for="covidStatusLabel">Covid Status</label>
+                                    <select multiple  class="form-control" id="covidStatus">
+                                        <option value="Onsite">Onsite</option>
+                                        <option value="WAHA">WAHA</option>
                                     </select>
                                 </div>
 
-                                <div class="col-sm-2 form-group">
+                                <div class="col form-group">
+                                    <label for="SOMLabel">SOM</label>
+                                    <select multiple  class="form-control" id="SOM">
+                                        <option value="">Bote, Katrina Ana D.</option>
+                                        <option value="">Gabriel, Juan Paulo M.</option>
+                                        <option value="">Green, Angela N.</option>
+                                        <option value="">Hibo, Loreto P.</option>
+                                        <option value="">Lantin, Victor E.</option>
+                                    </select>
+                                </div>
+                             
+                                <div class="colform-group">
                                     <label for="CommunityLabel">Community</label>
                                     <select multiple  class="form-control" id="Community">
                                     <option value="">--</option>
@@ -197,29 +195,18 @@
                                     </select>
                                 </div>
 
-                                <div class="col-sm-2 form-group">
-                                    <label for="SOMLabel">SOM</label>
-                                    <select multiple  class="form-control" id="SOM">
-                                        <option value="">Bote, Katrina Ana D.</option>
-                                        <option value="">Gabriel, Juan Paulo M.</option>
-                                        <option value="">Green, Angela N.</option>
-                                        <option value="">Hibo, Loreto P.</option>
-                                        <option value="">Lantin, Victor E.</option>
+                                <div class="col form-group">
+                                    <label for="TEXManagerLabel">TEX Manager</label>
+                                    <select multiple  class="form-control" id="TEXManager">
+                                        <option value="">Manapsal, Emerson Rei</option>
+                                        <option value="">Ocampo, Josefa</option>
+                                        <option value="">Viloria, Jancelzor</option>
+                                        <option value="">Abriol, Stephen M</option>
+                                        <option value="">Agsaway, Micaela</option>
                                     </select>
                                 </div>
 
-                                <div class="col-sm-2 form-group">
-                                    <label for="TenurityLabel">Tenurity</label>
-                                    <select multiple  class="form-control" id="Tenurity">
-                                        <option value="">+ 360 Days</option>
-                                        <option value="">181-360 Days</option>
-                                    </select>
-                                </div>
-
-                            </div>
-
-                            <div class="row">
-                                <div class="col-sm-3 form-group">
+                                <div class="col form-group">
                                     <label for="WSETLabel">WSET</label>
                                     <select multiple  class="form-control" id="WSET">
                                         <option value="">25-Oct</option>
@@ -230,7 +217,7 @@
                                     </select>
                                 </div>
 
-                                <div class="col-sm-3 form-group">
+                                <div class="col form-group">
                                     <label for="DateLabel">Date</label>
                                     <select multiple  class="form-control" id="Date">
                                         <option value="">10/25/2020</option>
@@ -239,28 +226,8 @@
                                         <option value="">10/28/2020</option>
                                     </select>
                                 </div>
-
-                                <div class="col-sm-3 form-group">
-                                    <label for="SupervisorLabel">Supervisor</label>
-                                    <select multiple  class="form-control" id="Supervisor">
-                                        <option value="">Aldaba, Joy Therese A.</option>
-                                        <option value="">Almarines, Faye</option>
-                                        <option value="">Apuya II, Florencio</option>
-                                        <option value="">Aquino, Jenielyn</option>
-                                    </select>
-                                </div>
-
-                                <div class="col-sm-3 form-group">
-                                    <label for="TEXManagerLabel">TEX Manager</label>
-                                    <select multiple  class="form-control" id="TEXManager">
-                                        <option value="">Manapsal, Emerson Rei</option>
-                                        <option value="">Ocampo, Josefa</option>
-                                        <option value="">Viloria, Jancelzor</option>
-                                        <option value="">Abriol, Stephen M</option>
-                                        <option value="">Agsaway, Micaela</option>
-                                    </select>
-                                </div>
                             </div>
+                            
                         </div>                    
                     </div>
                  </div>                   
@@ -268,178 +235,39 @@
 
             <!-- table -->
 
-          
-
-            <div class="mt-3">
-                <table id="tableOne" class="table table-sm table-hover" style="width:100%">
-                    <thead class="primary_table">
-                        <th>Sr. Manager Level</th>
-                        <th>Productivity</th>
-                        <th>Occupancy</th>
-                        <th>Aux Use V. Staff Time</th>
-                        <th>Handled Calls</th>
-                        <th>OB Calls</th>
-                        <th>CRT</th>
-                        <th>Talk Time</th>
-                        <th>Total ACW</th>
-                        <th>ACW Idle</th>
-                        <th>Hold</th>
-                        <th>ACWOUT</th>
-                        <th>Outbound</th>
-                        <th>OB %</th>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Hibo, Loreto</td>
-                            <td>72.1%</td>
-                            <td>97.4%</td>
-                            <td>36.5%</td>
-                            <td>559</td>
-                            <td>157</td>
-                            <td>937</td>
-                            <td>633</td>
-                            <td>143</td>
-                            <td>64</td>
-                            <td>129</td>
-                            <td>79</td>
-                            <td>32</td>
-                            <td>28.1%</td>
-                        </tr>
-                        <tr>
-                            <td>Mangahas, Arnel</td>
-                            <td>72.1%</td>
-                            <td>97.4%</td>
-                            <td>36.5%</td>
-                            <td>559</td>
-                            <td>157</td>
-                            <td>937</td>
-                            <td>633</td>
-                            <td>143</td>
-                            <td>64</td>
-                            <td>129</td>
-                            <td>79</td>
-                            <td>32</td>
-                            <td>28.1%</td>
-                        </tr>
-                    </tbody>
-                    <tfoot class="primary_table_color">
-                        <tr>
-                            <th>Grand Total</th>
-                            <th>73.7%</th>
-                            <th>97.6%</th>
-                            <th>34.4%</th>
-                            <th>716</th>
-                            <th>207</th>
-                            <th>957</th>
-                            <th>661</th>
-                            <th>144</th>
-                            <th>59</th>
-                            <th>123</th>
-                            <th>85</th>
-                            <th>29</th>
-                            <th>28.9%</th>
-                        </tr>
-                    </tfoot>
-                </table>
-            </div>
-          
-            <div class="mt-4">
-                <table id="tableTwo" class="table table-sm table-hover" style="width:100%">
-                    <thead class="primary_table">
-                        <th>Sr. Manager Level</th>
-                        <th>Productivity</th>
-                        <th>Occupancy</th>
-                        <th>Aux Use V. Staff Time</th>
-                        <th>Handled Calls</th>
-                        <th>OB Calls</th>
-                        <th>CRT</th>
-                        <th>Talk Time</th>
-                        <th>Total ACW</th>
-                        <th>ACW Idle</th>
-                        <th>Hold</th>
-                        <th>ACWOUT</th>
-                        <th>Outbound</th>
-                        <th>OB %</th>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Hibo, Loreto</td>
-                            <td>72.1%</td>
-                            <td>97.4%</td>
-                            <td>36.5%</td>
-                            <td>559</td>
-                            <td>157</td>
-                            <td>937</td>
-                            <td>633</td>
-                            <td>143</td>
-                            <td>64</td>
-                            <td>129</td>
-                            <td>79</td>
-                            <td>32</td>
-                            <td>28.1%</td>
-                        </tr>
-                        <tr>
-                            <td>Mangahas, Arnel</td>
-                            <td>72.1%</td>
-                            <td>97.4%</td>
-                            <td>36.5%</td>
-                            <td>559</td>
-                            <td>157</td>
-                            <td>937</td>
-                            <td>633</td>
-                            <td>143</td>
-                            <td>64</td>
-                            <td>129</td>
-                            <td>79</td>
-                            <td>32</td>
-                            <td>28.1%</td>
-                        </tr>
-                    </tbody>
-                    <tfoot class="primary_table_color">
-                        <tr>
-                            <th>Grand Total</th>
-                            <th>73.7%</th>
-                            <th>97.6%</th>
-                            <th>34.4%</th>
-                            <th>716</th>
-                            <th>207</th>
-                            <th>957</th>
-                            <th>661</th>
-                            <th>144</th>
-                            <th>59</th>
-                            <th>123</th>
-                            <th>85</th>
-                            <th>29</th>
-                            <th>28.9%</th>
-                        </tr>
-                    </tfoot>
-                </table>
-            </div>
-
-            <div class="mt-4">
-                <table id="example" class="table table-sm table-hover" style="width:100%">
+            <div class="wrap mt-4">
+                <table id="example" class="table table-sm table-hover " style="width:100%">
                     <thead class="primary_table">
                         <tr>
-                            <th style="width: 50px;"></th>
-                            <th>Sr. Manager Level</th>
+                            <th></th>
+                            <th>Team Level</th>
                             <th>Productivity</th>
                             <th>Occupancy</th>
-                            <th>Aux Use</th>
+                            <th>Aux Use V. Staff Time</th>
                             <th>Handled Calls</th>
                             <th>OB Calls</th>
                             <th>CRT</th>
                             <th>Talk Time</th>
                             <th>Total ACW</th>
                             <th>ACW Idle</th>
-                            <th>Hold</th>
-                            <th>ACW Out</th>
+                            <th>Hold</th>                       
                             <th>Outbound</th>
                             <th>OB %</th>
+                            <th>Default</th>
+                            <th>Stread</th>
+                            <th>Coaching</th>
+                            <th>Traning</th>
+                            <th>Meeting</th>
+                            <th>Break</th>
+                            <th>Project</th>
+                            <th>System</th>
+                            <th>Aux 8</th>
+                            <th>Aux 9</th>
                         </tr>
                     </thead>
-                    <tfoot class="primary_table_color">
+                    <tfoot class="primary_table_footer">
                         <tr>
-                            <th style="width: 50px;"></th>
+                            <th></th>
                             <th>Grand Total</th>
                             <th>73.7%</th>
                             <th>97.6%</th>
@@ -453,11 +281,21 @@
                             <th>123</th>
                             <th>85</th>
                             <th>29</th>
+                            <th>28.9%</th>                            
+                            <th>957</th>
+                            <th>661</th>
+                            <th>144</th>
+                            <th>59</th>
+                            <th>123</th>
+                            <th>85</th>
+                            <th>29</th>
+                            <th>29</th>
                             <th>28.9%</th>
                         </tr>
                     </tfoot>
                 </table>
             </div>    
+          
         </div>
 
         <!-- scripts -->
@@ -467,6 +305,224 @@
 
        <script src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
         <!-- <script src="../dependencies/DataTables/js/datatables.min.js"></script> -->
-        <script src="datatable/datatable.js"></script>
+        <script>
+        /* Formatting function for row details - modify as you need */
+        function format ( d ) {
+    // `d` is the original data object for the row
+    return '<div class="pb-3 pt-1"><table class="table table-sm table-bordered" style="width:100%;margin-left:1px">'+
+        '<thead>'+
+            '<tr>'+    
+            '    <th>Team Level</th>'+
+            '    <th>Productivity</th>'+
+            '    <th>Occupancy</th>'+
+            '    <th>Aux Use V. Staff Time</th>'+
+            '    <th>Handled Calls</th>'+
+            '    <th>OB Calls</th>'+
+            '    <th>CRT</th>'+
+            '    <th>Talk Time</th>'+
+            '    <th>Total ACW</th>'+
+            '    <th>ACW Idle</th>'+
+            '    <th>Hold</th>       '+                
+            '    <th>Outbound</th>'+
+            '    <th>OB %</th>'+
+            '    <th>Default</th>'+
+            '    <th>Stread</th>'+
+            '    <th>Coaching</th>'+
+            '    <th>Traning</th>'+
+            '    <th>Meeting</th>'+
+            '    <th>Break</th>'+
+            '    <th>Project</th>'+
+            '    <th>System</th>'+
+            '    <th>Aux 8</th>'+
+            '    <th>Aux 9</th>'+
+            '</tr>'+
+        '</thead>'+
+        '<tr>'+            
+            '<td>Alberto, Paolo B</td>'+
+            '<td>80.5%</td>'+
+            '<td>95.6%</td>'+
+            '<td>29.1%</td>'+
+            '<td>307</td>'+
+            '<td>27</td>'+
+            '<td>792</td>'+
+            '<td>662</td>'+
+            '<td>48</td>'+
+            '<td>28</td>'+
+            '<td>73</td>'+
+            '<td>9</td>'+
+            '<td>8.8%</td>'+
+            '<td>6:33:20</td>'+
+            '<td>6:33:20</td>'+
+            '<td>6:33:20</td>'+
+            '<td>6:33:20</td>'+
+            '<td>6:33:20</td>'+
+            '<td>6:33:20</td>'+
+            '<td>6:33:20</td>'+
+            '<td>6:33:20</td>'+
+            '<td>6:33:20</td>'+
+            '<td>6:33:20</td>'+
+        '</tr>'+      
+        '<tr>'+            
+            '<td>Avendano, Ma. Louela C</td>'+
+            '<td>80.5%</td>'+
+            '<td>95.6%</td>'+
+            '<td>29.1%</td>'+
+            '<td>307</td>'+
+            '<td>27</td>'+
+            '<td>792</td>'+
+            '<td>662</td>'+
+            '<td>48</td>'+
+            '<td>28</td>'+
+            '<td>73</td>'+
+            '<td>9</td>'+
+            '<td>8.8%</td>'+
+            '<td>6:33:20</td>'+
+            '<td>6:33:20</td>'+
+            '<td>6:33:20</td>'+
+            '<td>6:33:20</td>'+
+            '<td>6:33:20</td>'+
+            '<td>6:33:20</td>'+
+            '<td>6:33:20</td>'+
+            '<td>6:33:20</td>'+
+            '<td>6:33:20</td>'+
+            '<td>6:33:20</td>'+
+        '</tr>'+      
+        '<tr>'+            
+            '<td>Bacho, Judy Ann A</td>'+
+            '<td>80.5%</td>'+
+            '<td>95.6%</td>'+
+            '<td>29.1%</td>'+
+            '<td>307</td>'+
+            '<td>27</td>'+
+            '<td>792</td>'+
+            '<td>662</td>'+
+            '<td>48</td>'+
+            '<td>28</td>'+
+            '<td>73</td>'+
+            '<td>9</td>'+
+            '<td>8.8%</td>'+
+            '<td>6:33:20</td>'+
+            '<td>6:33:20</td>'+
+            '<td>6:33:20</td>'+
+            '<td>6:33:20</td>'+
+            '<td>6:33:20</td>'+
+            '<td>6:33:20</td>'+
+            '<td>6:33:20</td>'+
+            '<td>6:33:20</td>'+
+            '<td>6:33:20</td>'+
+            '<td>6:33:20</td>'+
+        '</tr>'+
+        '<tr>'+            
+            '<td>Cueto, Elaine Isabel A</td>'+
+            '<td>80.5%</td>'+
+            '<td>95.6%</td>'+
+            '<td>29.1%</td>'+
+            '<td>307</td>'+
+            '<td>27</td>'+
+            '<td>792</td>'+
+            '<td>662</td>'+
+            '<td>48</td>'+
+            '<td>28</td>'+
+            '<td>73</td>'+
+            '<td>9</td>'+
+            '<td>8.8%</td>'+
+            '<td>6:33:20</td>'+
+            '<td>6:33:20</td>'+
+            '<td>6:33:20</td>'+
+            '<td>6:33:20</td>'+
+            '<td>6:33:20</td>'+
+            '<td>6:33:20</td>'+
+            '<td>6:33:20</td>'+
+            '<td>6:33:20</td>'+
+            '<td>6:33:20</td>'+
+            '<td>6:33:20</td>'+
+        '</tr>'+
+      
+       
+    '</table></div>';
+}
+ 
+$(document).ready(function() {
+    var table = $('#example').DataTable( {
+        "ajax": "ajax/texManager.txt",
+        "columns": [
+            {
+                "className":      'details-control',
+                "orderable":      false,
+                "data":           null,
+                "defaultContent": ''
+            },
+            { "data": "team_level" },
+            { "data": "productivity" },
+            { "data": "occupancy" },
+            { "data": "aux_use" },
+            { "data": "handled_calls" },
+            { "data": "ob_calls" },
+            { "data": "crt" },
+            { "data": "talk_time" },
+            { "data": "total_acw" },
+            { "data": "acw_idle" },
+            { "data": "hold" },
+            { "data": "acw_out" },
+            { "data": "outbound" },
+            { "data": "ob" },
+            { "data": "stread" },
+            { "data": "coaching" },
+            { "data": "training" },
+            { "data": "meeting" },
+            { "data": "break" },
+            { "data": "project" },
+            { "data": "system" },
+            { "data": "aux_8" },
+            { "data": "aux_9" }
+        ],
+        "fnInitComplete": function(){
+                // Disable TBODY scoll bars
+                $('.dataTables_scrollBody').css({
+                    'overflow': 'hidden',
+                    'border': '0'
+                });
+
+                // Enable TFOOT scoll bars
+                $('.dataTables_scrollFoot').css('overflow', 'auto');
+
+                // Sync TFOOT scrolling with TBODY
+                $('.dataTables_scrollFoot').on('scroll', function () {
+                    $('.dataTables_scrollBody').scrollLeft($(this).scrollLeft());
+                });                    
+            },
+        "order": [[1, 'asc']],
+        responsive: true,
+        "searching": false,
+        "ordering": true,
+        "info":     false,  
+        "bLengthChange": false ,
+        "paging": false,
+        "scrollX": "350px"
+    } );
+     
+    // Add event listener for opening and closing details
+    $('#example tbody').on('click', 'td.details-control', function () {
+        var tr = $(this).closest('tr');
+        var row = table.row( tr );
+ 
+        if ( row.child.isShown() ) {
+            // This row is already open - close it
+            row.child.hide();
+            tr.removeClass('shown');
+        }
+        else {
+            // Open this row
+            row.child( format(row.data()) ).show();
+            tr.addClass('shown');
+        }
+    } );
+
+ 
+});
+
+
+
+        </script>
     </body>
 </html>
