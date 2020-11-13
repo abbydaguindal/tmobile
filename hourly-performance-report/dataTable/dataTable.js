@@ -1,0 +1,73 @@
+$('#MTDtable').DataTable( {
+    responsive: true,
+    "searching": false,
+    "ordering": false,
+    "lengthChange": false,
+    "bPaginate": false,
+    "info": false
+    } );
+$('#DateTable').DataTable( {
+    responsive: true,
+    "searching": false,
+    "ordering": false,
+    "lengthChange": false,
+    "bPaginate": false,
+    "info": false
+    } );
+$('#TeamTable').DataTable( {
+    responsive: true,
+    "searching": false,
+    "ordering": false,
+    "lengthChange": false,
+    "bPaginate": false,
+    "info": false
+    } );
+    
+$('#levelTable').DataTable( {
+    responsive: true,
+    "searching": false,
+    "ordering": false,
+    "lengthChange": false,
+    "bPaginate": false,
+    "info": false
+    } );
+$('#shareTable').DataTable( {
+    responsive: true,
+    "searching": false,
+    "ordering": false,
+    "lengthChange": false,
+    "bPaginate": false,
+    "info": false
+    } );
+$('#intervalTable').DataTable( {
+    responsive: true,
+    "searching": false,
+    "ordering": false,
+    "lengthChange": false,
+    "bPaginate": false,
+    "info": false
+    } );
+$('#hoursTable').DataTable( {
+    responsive: true,
+    "searching": false,
+    "ordering": false,
+    "lengthChange": false,
+    "bPaginate": false,
+    "info": false
+    } );
+$('#combinedTable').DataTable( {
+    responsive: true,
+    "searching": false,
+    "ordering": false,
+    "lengthChange": false,
+    "bPaginate": false,
+    "info": false
+    } );
+$('#sampletable').DataTable( {
+    responsive: true,
+    "searching": false,
+    "ordering": false,
+    "lengthChange": false,
+    "bPaginate": false,
+    "info": false
+    } );                           
