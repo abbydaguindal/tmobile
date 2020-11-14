@@ -1,0 +1,85 @@
+:root{
+    --TMob: #FF0082;
+}
+body{
+    background-color: #f9fbfd;
+}
+
+.card {
+    border-radius: 5px;
+    background-color: #fff;
+    margin-bottom: 30px;
+    -webkit-box-shadow: 2px 6px 15px 0 rgba(69,65,78,.1);
+    -moz-box-shadow: 2px 6px 15px 0 rgba(69,65,78,.1);
+    box-shadow: 2px 6px 15px 0 rgba(69,65,78,.1);
+}
+.bg-primary-theme{
+    background-color: #fff;
+    color: #fff;
+}
+.bg-pink-head{
+    background-color: #ca0252;
+    color: #fff;
+}
+.bg-pink{
+    background-color: var(--TMob);
+    color: #fff;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: #8d9498;
+}
+.navbar-dark .navbar-nav .active>.nav-link{
+    color: var(--TMob) !important;
+    font-weight: 600;
+}
+.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
+    color: var(--TMob) !important;
+    
+}
+.navbar-brand{
+    font-weight: 600;
+    color:  var(--TMob) !important;
+}
+.py---5{
+    padding-top: 4em;
+}
+.dropdown-item:focus, .dropdown-item:hover {
+    color: #16181b;
+    text-decoration: none;
+    background-color: #f5e0e0;
+}
+/* for datatable */
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(255,213,230,0.8);
+}
+.table-striped tbody tr:nth-of-type(even) {
+    background-color: rgb(254,194,218);
+}
+.bg-footer{
+    background-color: rgba(254,194,218,.2);
+}
+
+label {font-weight:600; font-size: 0.875rem;}
+select[multiple] { font-size:0.8125rem;}
+.primary_table {background-color: rgb(31,78,120); color:white}
+.primary_table_color {background-color: rgb(221,235,247);}
+table thead th, tfoot th{font-weight:600; font-size: 14px; }
+table thead  tr, td{font-size: 14px;}
+
+
+td.details-control {background: url('../assets/images/plus.png') no-repeat center center; cursor: pointer; background-size: 17px; margin:auto;  }
+tr.shown td.details-control { background: url('../assets/images/minus.png') no-repeat center center; background-size: 17px; margin:auto;}
+
+/* width */
+::-webkit-scrollbar { width: 10px; }
+
+/* Track */
+::-webkit-scrollbar-track { background: #f7f7f7; }
+
+/* Handle */
+::-webkit-scrollbar-thumb {background: #888; }
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {background: #555;}
+
+

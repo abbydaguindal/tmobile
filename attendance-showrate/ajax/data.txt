@@ -1,0 +1,60 @@
+{
+  "data": [
+    {
+      "id": "1",
+      "showrate": "Acopicop Janine E",
+      "attendanceDateOne": "100%",
+      "attendanceDateTwo": "100%",
+      "attendanceDateThree": "100%",
+      "total": "100%"
+    },
+    {
+      "id": "2",
+      "showrate": "Acopicop John Patrick  Y",
+      "attendanceDateOne": "100%",
+      "attendanceDateTwo": "50%",
+      "attendanceDateThree": "100%",
+      "total": "100%"
+    },
+    {
+      "id": "3",
+      "showrate": "Aldaba, Joy Therese",
+      "attendanceDateOne": "100%",
+      "attendanceDateTwo": "100%",
+      "attendanceDateThree": "100%",
+      "total": "100%"
+    },
+    {
+      "id": "4",
+      "showrate": "Almarines, Faye Angelita",
+      "attendanceDateOne": "100%",
+      "attendanceDateTwo": "100%",
+      "attendanceDateThree": "100%",
+      "total": "100%"
+    },
+    {
+      "id": "5",
+      "showrate": "Almodovar, John Aie Paul D.",
+      "attendanceDateOne": "100%",
+      "attendanceDateTwo": "100%",
+      "attendanceDateThree": "100%",
+      "total": "100%"
+    },
+    {
+      "id": "6",
+      "showrate": "Almodovar, John Aie Paul D.",
+      "attendanceDateOne": "100%",
+      "attendanceDateTwo": "100%",
+      "attendanceDateThree": "100%",
+      "total": "100%"
+    },
+    {
+      "id": "6",
+      "showrate": "Alulod Daryl M",
+      "attendanceDateOne": "100%",
+      "attendanceDateTwo": "25%",
+      "attendanceDateThree": "25%",
+      "total": "50%"
+    }
+  ]
+}
