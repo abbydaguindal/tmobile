@@ -14,70 +14,7 @@
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">                      
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="locationDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Location
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="locationDropdown">
-                        <a class="dropdown-item" href="#">Stay In</a>
-                        <a class="dropdown-item" href="#">Stay Out</a>  
-                        <a class="dropdown-item" href="#">Stay Out</a>  
-                        <a class="dropdown-item" href="#">Unable To Work</a>           
-                        <a class="dropdown-item" href="" >WAHA</a>
-                    </div>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="weekstartDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Weekstart
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="weekstartDropdown">
-                        <a class="dropdown-item" href="#">9/27/2020</a>
-                        <a class="dropdown-item" href="#">10/04/2020</a>           
-                        <a class="dropdown-item" href="#">10/11/2020</a>           
-                        <a class="dropdown-item" href="#">10/18/2020</a>  
-                        <a class="dropdown-item" href="#">10/25/2020</a>                    
-                    </div>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="managerDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Sr. Manager
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="managerDropdown">
-                        <a class="dropdown-item" href="#">Tolentino, Robertson B.</a>
-                        <a class="dropdown-item" href="#"></a>           
-                    </div>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="supervisorDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Supervisor
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="supervisorDropdown">
-                        <a class="dropdown-item" href="#"></a>
-                        <a class="dropdown-item" href="#"></a>           
-                    </div>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="accmDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    ACCM
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="accmDropdown">
-                        <a class="dropdown-item" href="#"></a>
-                        <a class="dropdown-item" href="#"></a>           
-                    </div>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="phasesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Phases
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="phasesDropdown">
-                        <a class="dropdown-item" href="#"></a>
-                        <a class="dropdown-item" href="#"></a>           
-                    </div>
-                </li>
-        
-            </ul> 
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">           
             <ul class="navbar-nav ml-auto">                      
                 <li class="nav-item active">
                     <a class="nav-link" href="dashboard.php">Dashboard <span class="sr-only">(current)</span></a>
