@@ -214,8 +214,20 @@
                                 <th style="width: 50px;"></th>
                                 <th>Agent Level | Showrate</th>
                                 <th>10/1/2020</th>
-                                <th>10/3/2020</th>
                                 <th>10/2/2020</th>
+                                <th>10/3/2020</th>
+                                <th>10/4/2020</th>
+                                <th>10/5/2020</th>
+                                <th>10/6/2020</th>
+                                <th>10/7/2020</th>
+                                <th>10/8/2020</th>
+                                <th>10/9/2020</th>
+                                <th>10/10/2020</th>
+                                <th>10/11/2020</th>
+                                <th>10/12/2020</th>
+                                <th>10/13/2020</th>
+                                <th>10/14/2020</th>
+                                <th>10/15/2020</th>
                                 <th>Grand Total</th>                        
                             </tr>
                         </thead>
@@ -226,7 +238,19 @@
                                 <th>87.4%</th>
                                 <th>87.2%</th>
                                 <th>89.6%</th>
-                                <th>88.3</th>                           
+                                <th>88.3</th>
+                                <th>87.4%</th>
+                                <th>87.2%</th>
+                                <th>89.6%</th>
+                                <th>88.3</th>
+                                <th>87.4%</th>
+                                <th>87.2%</th>
+                                <th>89.6%</th>
+                                <th>88.3</th>
+                                <th>87.4%</th>
+                                <th>87.2%</th>
+                                <th>89.6%</th>
+                                <th>88.3</th>                                
                             </tr>
                         </tfoot>
                     </table>
@@ -256,6 +280,18 @@
             '    <th>10/1/2020</th>'+ 
             '    <th>10/2/2020</th>'+ 
             '    <th>10/3/2020</th>'+ 
+            '    <th>10/4/2020</th>'+ 
+            '    <th>10/5/2020</th>'+ 
+            '    <th>10/6/2020</th>'+ 
+            '    <th>10/7/2020</th>'+ 
+            '    <th>10/8/2020</th>'+ 
+            '    <th>10/9/2020</th>'+ 
+            '    <th>10/10/2020</th>'+ 
+            '    <th>10/11/2020</th>'+ 
+            '    <th>10/12/2020</th>'+ 
+            '    <th>10/13/2020</th>'+ 
+            '    <th>10/14/2020</th>'+ 
+            '    <th>10/15/2020</th>'+ 
             '    <th>Grand Total</th>'+ 
             '</tr>'+
         '</thead>'+
@@ -265,11 +301,35 @@
             '<td>100.0%</td>'+  
             '<td>100.0%</td>'+
             '<td>100.0%</td>'+
+            '<td>100.0%</td>'+ 
+            '<td>100.0%</td>'+  
+            '<td>100.0%</td>'+
+            '<td>100.0%</td>'+
+            '<td>100.0%</td>'+ 
+            '<td>100.0%</td>'+  
+            '<td>100.0%</td>'+
+            '<td>100.0%</td>'+
             '<td>100.0%</td>'+          
+            '<td>100.0%</td>'+  
+            '<td>100.0%</td>'+
+            '<td>100.0%</td>'+
+            '<td>100.0%</td>'+ 
         '</tr>'+
         '<tr>'+            
             '<td>6381317</td>'+
             '<td>Abuda, Angela Marie J.</td>'+ 
+            '<td>100.0%</td>'+  
+            '<td>100.0%</td>'+
+            '<td>100.0%</td>'+
+            '<td>100.0%</td>'+ 
+            '<td>100.0%</td>'+  
+            '<td>100.0%</td>'+
+            '<td>100.0%</td>'+
+            '<td>100.0%</td>'+ 
+            '<td>100.0%</td>'+  
+            '<td>100.0%</td>'+
+            '<td>100.0%</td>'+
+            '<td>100.0%</td>'+          
             '<td>100.0%</td>'+  
             '<td>100.0%</td>'+
             '<td>100.0%</td>'+
@@ -292,6 +352,18 @@ $(document).ready(function() {
             { "data": "attendanceDateOne" },
             { "data": "attendanceDateTwo" },
             { "data": "attendanceDateThree" },
+            { "data": "attendanceDateFour" },
+            { "data": "attendanceDateFive" },
+            { "data": "attendanceDateSix" },
+            { "data": "attendanceDateSeven" },
+            { "data": "attendanceDateEight" },
+            { "data": "attendanceDateNine" },
+            { "data": "attendanceDateTen" },
+            { "data": "attendanceDateEleven" },
+            { "data": "attendanceDateTwelve" },
+            { "data": "attendanceDateThirteen" },
+            { "data": "attendanceDateFourteen" },
+            { "data": "attendanceDateFifteen" },
             { "data": "total" }
         ],
         "order": [[1, 'asc']],
@@ -301,8 +373,9 @@ $(document).ready(function() {
         "info":     false,  
         "bLengthChange": false ,
         "paging": false,
-        "scrollY":        "60vh",
-        "scrollCollapse": true,      
+        "scrollY":        "40vh",
+        "scrollCollapse": true,
+        "scrollX": true      
         
     } );
      

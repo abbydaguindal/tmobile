@@ -63,6 +63,9 @@ body{
 .bg-footer{
     background-color: rgba(254,194,218,.2);
 }
+.table-sm th{
+    white-space: nowrap;
+}
 
 label {font-weight:600; font-size: 0.875rem;}
 select[multiple] { font-size:0.8125rem;}
