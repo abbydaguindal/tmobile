@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap');
 :root{
     --TMob: #FF0082;
 }
@@ -12,6 +13,10 @@ body{
     -webkit-box-shadow: 2px 6px 15px 0 rgba(69,65,78,.1);
     -moz-box-shadow: 2px 6px 15px 0 rgba(69,65,78,.1);
     box-shadow: 2px 6px 15px 0 rgba(69,65,78,.1);
+}
+.card h3, h6{
+    font-family: 'Poppins', sans-serif;
+    
 }
 .bg-primary-theme{
     background-color: #fff;
