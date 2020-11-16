@@ -24,11 +24,11 @@ var myChart = new Chart(ctx, {
             ctx.textBaseline = 'bottom';
 
             this.data.datasets.forEach(function(dataset, i) {
-            var meta = chartInstance.controller.getDatasetMeta(i);
-            meta.data.forEach(function(bar, index) {
-                var data = dataset.data[index];
-                ctx.fillText(data, bar._model.x, bar._model.y - 5);
-            });
+            var meta = chartInstance.controller.getDatasetMeta(i);                     
+                meta.data.forEach(function(bar, index) {
+                    var data = dataset.data[index];
+                    ctx.fillText(data + "%", bar._model.x, bar._model.y - 5);                                                          
+                });
             });
         }
     },    
@@ -36,17 +36,16 @@ var myChart = new Chart(ctx, {
     scales: {
         yAxes: [{
             ticks: {            
-                   min: 70,
-                    max: 95,
+                   min: 0,
+                    max: 100,
                    callback: function(value){return value+ "%"}
                 },  
 				   scaleLabel: {
                    display: true,
                    labelString: "Percentage"
                 }
-            }]
-    },
-    
+            }]           
+    },    
     tooltips: {
         "enabled": false
     },
@@ -91,7 +90,7 @@ var myChart = new Chart(ctx, {
             var meta = chartInstance.controller.getDatasetMeta(i);
             meta.data.forEach(function(bar, index) {
                 var data = dataset.data[index];
-                ctx.fillText(data, bar._model.x, bar._model.y - 5);
+                ctx.fillText(data + "%", bar._model.x, bar._model.y - 5);
             });
             });
         }
@@ -161,7 +160,7 @@ var myChart = new Chart(ctx, {
             var meta = chartInstance.controller.getDatasetMeta(i);
             meta.data.forEach(function(bar, index) {
                 var data = dataset.data[index];
-                ctx.fillText(data, bar._model.x, bar._model.y - 5);
+                ctx.fillText(data + "%", bar._model.x, bar._model.y - 5);
             });
             });
         }
