@@ -34,12 +34,81 @@
 
 <body>
 
-               
+        <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light shadow fixed-top">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                        <a class="navbar-brand" href="/hawk/dashboard/">
+                            <img src="../assets/clients/CDS UK/media/cur-logo.png" width="30" height="35" class="d-inline-block align-top" alt="">
+                            CDS UK                    </a>
+                        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link " id="dashboard" href="../dashboard/">Dashboard </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="historical" href="../historical/">Historical</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="auxes" href="../auxes/" tabindex="-1" aria-disabled="true">Auxes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="performance" href="../performance/" tabindex="-1" aria-disabled="true">Performance</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="roster" href="../roster/" tabindex="-1" aria-disabled="true">Roster</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="staffing" href="../staffing/" tabindex="-1" aria-disabled="true">Staffing</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="mappings" href="../mappings/" tabindex="-1" aria-disabled="true">Mapping</a>
+                            </li>
+                            <li class="nav-item dropdown" id="custom-table">
+                                <a class="nav-link dropdown-toggle" id="custom" href="../custom-table/" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Custom Table</a>                            
+                                <div class="dropdown-menu pages" aria-labelledby="custom"><a class="dropdown-item" href="../custom-table/index.php?page_id=324043642" onclick="return loadPage(this);" id="page_324043642">Forecast</a></div>
+                                
+                            </li>
+                            <li class="nav-item dropdown active">
+                                <a class="nav-link dropdown-toggle" id="settings" href="../settings/" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Settings</a>                            
+                                <div class="dropdown-menu" aria-labelledby="settings">                                
+                                    <a class="dropdown-item" href="../settings/kpi-calculation.php">Calculations</a>                                
+                                    <a class="dropdown-item" href="../settings/pages.php">Pages</a> 
+                                    <a class="dropdown-item" href="../settings/automation.php">Automation</a> 
+                                    <a class="dropdown-item" href="../kpi-target-maintenance/index.php">KPI Target</a>                                
+                                </div>
+                            </li>                       
+                            <li class="nav-item">
+                                <a class="nav-link" id="users" href="../users/" tabindex="-1" aria-disabled="true">Users</a>
+                            </li>                                              
+                        </ul>
+                        <form class="form-inline my-2 my-lg-0 border-left pl-3">
+                            <div class="btn-group">
+                                <div class="icon-circle bg-light" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                <font size="5"><i class="fa fa-user-circle-o" aria-hidden="true"></i></font>
+                                </div>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                <h6 class="dropdown-header text-uppercase text-xs">User</h6>
+                                <a class="dropdown-item text-md" href="#">Carlo Buenaventura</a>
+                                <p class="dropdown-item text-sm">Developer</p>
+                                <div class="dropdown-divider"></div>
+                                <h6 class="dropdown-header text-uppercase text-xs" id="project">Project(s)</h6> 
+                                <div id="projectList"><button class="dropdown-item text-sm" onclick="return switchClient(this.id, this.innerText);" id="65753">CDS UK</button><button class="dropdown-item text-sm" onclick="return switchClient(this.id, this.innerText);" id="32433">T-Mobile</button><button class="dropdown-item text-sm" onclick="return switchClient(this.id, this.innerText);" id="56652">CDS US</button></div>                              
+                                            
+                                    <div class="dropdown-divider"></div> 
+                                    <a class="dropdown-item text-sm" href="#" data-toggle="modal" data-target="#timezoneModal">Set Timezone <span id="current-timezone"></span></a>                                                               
+                                    <div class="dropdown-divider"></div> 
+                                    <a class="dropdown-item text-sm" href="javascript:void(0);" onclick="return Logout();">Logout</a>                                                               
+                                                                                                
+                                </div>
+                            </div> 
+                        </form>
+                </div>
+        </nav>         
                    
                        
-                  <div>              
+                        <div class="container-fluid" style="margin-top: 5em;">           
                                     <!--category-->
-                                    <div id="accordion">
                                             <div class="card-body">
                                                             <div class="row">
                                                                 <div class="col-lg-3 col-md-3">
@@ -120,9 +189,9 @@
                                                             </div>
                                                         </div>
                                             </div>
-                                    </div>
+                                    
                                     <!--table-->
-                                    <div class="table-responsive">
+                                   -- <div class="table-responsive">
                                         <table id="MTDtable" class="table table-sm table-striped display nowrap" >
                                                 <thead class="text-light text-sm ">
                                                     <tr>
