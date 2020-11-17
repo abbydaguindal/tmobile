@@ -12,17 +12,11 @@
 
     <!-- <link rel="stylesheet" href="../dependencies/DataTables/css/datatables.min.css">
     <link rel="stylesheet" href="../dependencies/DataTables/css/datatables.css"> -->
-    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.22/css/dataTables.bootstrap4.min.css">
     <link rel="stylesheet" href="css/table.css">
     <style>
-        td{
-        font-size: 11px;
-        }
-        th{
-            font-size: 10px;
-            background-color: #000000;
-           
-        }
+     .footer{background-color: #ffffff;}
+        table thead{font-size: 13px; width:1px;white-space:nowrap;  background-color: #000000; }
+        table tbody  tr, td{font-size: 13px; }
       
         td.details-control {background: url('../assets/images/plus.png') no-repeat center center; cursor: pointer; background-size: 17px; margin:auto;  }
         tr.shown td.details-control { background: url('../assets/images/minus.png') no-repeat center center; background-size: 17px; margin:auto;}
@@ -206,7 +200,7 @@
 
                                     <!--table-->
                                     <div class="card-body">
-                                        <table id="teamLvlTbl" class="table table-sm table-striped table-bordered display nowrap">
+                                        <table id="teamLvlTbl" class="table table-sm table-striped display nowrap">
                                         <thead class="text-light">
                                                     <tr>
                                                             <th style="padding:1%"></th>
@@ -240,8 +234,8 @@
                                                             
                                                     </tr>
                                                 </thead>
-                                                <tfoot class="text-light">
-                                                    <tr >
+                                                <tfoot class="footer text-light">
+                                                    <tr style=" visibility: collapse" >
                                                             <th style="padding:1%"></th>
                                                             <th>SR MANAGER V2</th>
                                                             <th>TEX Manager V2</th>
@@ -286,8 +280,37 @@
         <script>
                 function format ( d ) {
                     // `d` is the original data object for the row
-                    return '<div><table class="table table-sm table-striped table-bordered display nowrap">'+
-                       
+                    return '<div><table class="table table-sm table-striped display nowrap">'+
+                        '<thead>'+
+                            '<tr style=" visibility: collapse">'+    
+                                '<th>SR MANAGER V2</th>'+
+                                '<th>TEX Manager V2</th>'+
+                                '<th>SUP V2</th>'+
+                                '<th>Name</th>'+
+                                '<th>Emp ID</th>'+
+                                '<th>Scheduled Headcount</th>'+
+                                '<th>Total Infraction</th>'+
+                                '<th>Miss Shift</th>'+
+                                '<th>Late Arrival</th>'+
+                                '<th>Missing Intra-Shift</th>'+
+                                '<th>Early Departure</th>'+
+                                '<th>Total Aux</th>'+
+                                '<th>Default</th>'+
+                                '<th>Stread</th>'+
+                                '<th>Coaching</th>'+
+                                '<th>Training</th>'+
+                                '<th>Meeting</th>'+
+                                '<th>Break</th>'+
+                                '<th>Project</th>'+
+                                '<th>System Aux</th>'+
+                                '<th>Aux 8</th>'+
+                                '<th>TPUSA Meeting</th>'+
+                                '<th>Missed Shift (Hours)</th>'+
+                                '<th>Late Arrival (Hours)</th>'+
+                                '<th>Missing Intra-Shift (Hours)</th>'+
+                                '<th>Early Dep (Hours)</th>'+
+                            '</tr>'+
+                        '</thead>'+
                         '<tr>'+            
                             '<td>Gabriel, Juan Paulo M</td>'+
                             '<td>Alusitian, Idol R</td>'+
@@ -478,15 +501,15 @@
                                 // Enable TFOOT scoll bars
                                 $('.dataTables_scrollFoot').css('overflow', 'auto');
 
-                                // Sync TFOOT scrolling with TBODY
+                             
                                 $('.dataTables_scrollFoot').on('scroll', function () {
                                     $('.dataTables_scrollBody').scrollLeft($(this).scrollLeft());
                                 });                    
                             },
-                        "order": [[1, 'asc']],
+                       
                         responsive: true,
                         "searching": false,
-                        "ordering": true,
+                        "ordering": false,
                         "info":     false,  
                         "bLengthChange": false ,
                         "paging": false,

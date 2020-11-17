@@ -12,7 +12,7 @@
 
     <!-- <link rel="stylesheet" href="../dependencies/DataTables/css/datatables.min.css">
     <link rel="stylesheet" href="../dependencies/DataTables/css/datatables.css"> -->
-    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.css">
+    <link rel="stylesheet" href="css/table.css">
 
     <style>
         td{
