@@ -11,16 +11,17 @@
         <link href="../dependencies/fontawesome/css/font-awesome.min.css" rel="stylesheet">
           
         <!--Data Table-->
-        <link rel="stylesheet" href="../dependencies/DataTables/css/datatables.min.css">
-        <link rel="stylesheet" href="../dependencies/DataTables/css/datatables.css">
+        <!-- <link rel="stylesheet" href="../dependencies/DataTables/css/datatables.min.css">
+        <link rel="stylesheet" href="../dependencies/DataTables/css/datatables.css"> -->
+        <link rel="stylesheet" href="https://cdn.datatables.net/1.10.22/css/dataTables.bootstrap4.min.css">
 
        <style>
         label {font-weight:600; font-size: 12px;}
         select[multiple] { font-size: 12px;}
         .primary_table {background-color: rgb(31,78,120); color:white}
         .primary_table_color {background-color: rgb(221,235,247);}
-        table thead th, tfoot th{font-weight:600; font-size: 14px; }
-        table thead  tr, td{font-size: 14px;}
+        table thead th, tfoot th{font-weight:600; font-size: 14px;}    
+        .table-child {width:1px;white-space:nowrap; text-align:center;}
 
        
         td.details-control {background: url('../assets/images/plus.png') no-repeat center center; cursor: pointer; background-size: 17px; margin:auto;  }
@@ -417,10 +418,10 @@
             </div>
 
             <div class="mt-4">
-                <table id="example" class="table table-sm table-hover" style="width:100%">
+                <table id="example" class="table table-sm table-condensed" style="width:100%">
                     <thead class="primary_table">
                         <tr>
-                            <th style="width: 50px;"></th>
+                            <th></th>
                             <th>Sr. Manager Level</th>
                             <th>Productivity</th>
                             <th>Occupancy</th>

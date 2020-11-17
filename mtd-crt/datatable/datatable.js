@@ -28,74 +28,79 @@ $('#tableManagerLevel').DataTable( {
  /* Formatting function for row details - modify as you need */
 function format ( d ) {
     // `d` is the original data object for the row
-    return '<table class="table table-sm table-bordered" style="width:100%;margin-left:1px">'+
-        '<thead>'+
-            '<tr>'+        
-            '    <th>Manager</th>'+
-            '    <th>Productivity</th>'+
-            '    <th>Occupancy</th>'+
-            '    <th>Aux Use</th>'+
-            '    <th>Handled Calls</th>'+
-            '    <th>OB Calls</th>'+
-            '    <th>CRT</th>'+
-            '    <th>Talk Time</th>'+
-            '    <th>Total ACW</th>'+
-            '    <th>ACW Idle</th>'+
-            '    <th>Hold</th>'+
-            '    <th>ACW Out</th>'+
-            '    <th>Outbound</th>'+
-            '    <th>OB %</th>'+
-            '</tr>'+
-        '</thead>'+
-        '<tr>'+            
-            '<td>10/1/2020</td>'+
-            '<td>86.6%</td>'+
-            '<td>97.5%</td>'+
-            '<td>28.9%</td>'+
-            '<td>9810</td>'+
-            '<td>3297</td>'+
-            '<td>964</td>'+
-            '<td>702</td>'+
-            '<td>136</td>'+
-            '<td>45</td>'+
-            '<td>99</td>'+
-            '<td>91</td>'+
-            '<td>26</td>'+
-            '<td>33.6%</td>'+
-        '</tr>'+
-        '<tr>'+            
-            '<td>10/2/2020</td>'+
-            '<td>86.6%</td>'+
-            '<td>97.5%</td>'+
-            '<td>28.9%</td>'+
-            '<td>9810</td>'+
-            '<td>3297</td>'+
-            '<td>964</td>'+
-            '<td>702</td>'+
-            '<td>136</td>'+
-            '<td>45</td>'+
-            '<td>99</td>'+
-            '<td>91</td>'+
-            '<td>26</td>'+
-            '<td>33.6%</td>'+
-        '</tr>'+
-        '<tr>'+            
-            '<td>10/3/2020</td>'+
-            '<td>86.6%</td>'+
-            '<td>97.5%</td>'+
-            '<td>28.9%</td>'+
-            '<td>9810</td>'+
-            '<td>3297</td>'+
-            '<td>964</td>'+
-            '<td>702</td>'+
-            '<td>136</td>'+
-            '<td>45</td>'+
-            '<td>99</td>'+
-            '<td>91</td>'+
-            '<td>26</td>'+
-            '<td>33.6%</td>'+
-        '</tr>'+
+    return '<table class="table table-sm table-condensed table-striped" style="width: 100%; margin-left:1px; table-layout:fixed;">'+
+        // '<thead class="d-none">'+
+        //     '<tr>'+  
+        //     '<th class="text-center"  style="width:13%;">Sr. Manager Level</th>'+
+        //     '<th class="text-center" >Productivity</th>'+
+        //     '<th class="text-center" >Occupancy</th>'+
+        //     '<th class="text-center" >Aux Use</th>'+
+        //     '<th class="text-center" >Handled Calls</th>'+
+        //     '<th class="text-center" >OB Calls</th>'+
+        //     '<th class="text-center" >CRT</th>'+
+        //     '<th class="text-center" >Talk Time</th>'+
+        //     '<th class="text-center" >Total ACW</th>'+
+        //     '<th class="text-center" >ACW Idle</th>'+
+        //     '<th class="text-center" >Hold</th>'+
+        //     '<th class="text-center" >ACW Out</th>'+
+        //     '<th class="text-center" >Outbound</th>'+
+        //     '<th class="text-center" >OB %</th>'+
+        //     '</tr>'+
+        // '</thead>'+
+        '<tbody>'+
        
+        '<tr>'+  
+            '<td class="text-center" style="width:13%;">10/1/2020</td>'+
+            '<td class="text-left">86.6%</td>'+
+            '<td class="text-center">97.5%</td>'+
+            '<td class="text-right">28.9%</td>'+
+            '<td class="text-right">9810</td>'+
+            '<td class="text-right">3297</td>'+
+            '<td class="text-right">964</td>'+
+            '<td class="text-center">702</td>'+
+            '<td class="text-center">136</td>'+
+            '<td class="text-center">45</td>'+
+            '<td class="text-center">99</td>'+
+            '<td class="text-center">91</td>'+
+            '<td class="text-center">26</td>'+
+            '<td class="text-center">33.6%</td>'+
+        '</tr>'+      
+             
+        '<tr>'+  
+            '<td class="text-center" style="width:13%;">10/1/2020</td>'+
+            '<td class="text-left">86.6%</td>'+
+            '<td class="text-center">97.5%</td>'+
+            '<td class="text-right">28.9%</td>'+
+            '<td class="text-right">9810</td>'+
+            '<td class="text-right">3297</td>'+
+            '<td class="text-right">964</td>'+
+            '<td class="text-center">702</td>'+
+            '<td class="text-center">136</td>'+
+            '<td class="text-center">45</td>'+
+            '<td class="text-center">99</td>'+
+            '<td class="text-center">91</td>'+
+            '<td class="text-center">26</td>'+
+            '<td class="text-center">33.6%</td>'+
+        '</tr>'+      
+             
+        '<tr>'+  
+            '<td class="text-center" style="width:13%;">10/1/2020</td>'+
+            '<td class="text-left">86.6%</td>'+
+            '<td class="text-center">97.5%</td>'+
+            '<td class="text-right">28.9%</td>'+
+            '<td class="text-right">9810</td>'+
+            '<td class="text-right">3297</td>'+
+            '<td class="text-right">964</td>'+
+            '<td class="text-center">702</td>'+
+            '<td class="text-center">136</td>'+
+            '<td class="text-center">45</td>'+
+            '<td class="text-center">99</td>'+
+            '<td class="text-center">91</td>'+
+            '<td class="text-center">26</td>'+
+            '<td class="text-center">33.6%</td>'+
+        '</tr>'+      
+             
+        '</tbody>'+      
     '</table>';
 }
  
@@ -124,13 +129,13 @@ $(document).ready(function() {
             { "data": "outbound" },
             { "data": "ob" }
         ],
-        "order": [[1, 'asc']],
+        // "order": [[1, 'asc']],
          responsive: true,
-    "searching": false,
-    "ordering": true,
-    "info":     false,  
-    "bLengthChange": false ,
-    "paging": false
+        "searching": false,
+        "ordering": true,
+        "info":     false,  
+        "bLengthChange": false ,
+        "paging": false
     } );
      
     // Add event listener for opening and closing details

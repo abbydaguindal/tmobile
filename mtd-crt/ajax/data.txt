@@ -17,24 +17,7 @@
       "outbound": "25",
       "ob": "30.6%"
     },
-    {
-      "id": "2",
-      "manager": "11-Oct",
-       "productivity": "85.5%",
-      "occupancy": "96.4%",
-      "aux_use": "28.5%",
-      "handled_calls": "27374",
-      "ob_calls": "8381",
-      "crt": "933",     
-      "talk_time": "698",
-      "total_acw": "123",
-      "acw_idle": "44",
-      "hold": "87",
-      "acw_out": "79",
-      "outbound": "25",
-      "ob": "30.6%"
-    },
-    {
+     {
       "id": "3",
       "manager": "4-Oct",
        "productivity": "85.5%",
@@ -51,6 +34,23 @@
       "outbound": "25",
       "ob": "30.6%"
     },
+    {
+      "id": "2",
+      "manager": "11-Oct",
+       "productivity": "85.5%",
+      "occupancy": "96.4%",
+      "aux_use": "28.5%",
+      "handled_calls": "27374",
+      "ob_calls": "8381",
+      "crt": "933",     
+      "talk_time": "698",
+      "total_acw": "123",
+      "acw_idle": "44",
+      "hold": "87",
+      "acw_out": "79",
+      "outbound": "25",
+      "ob": "30.6%"
+    },       
     {
       "id": "4",
       "manager": "18-Oct",

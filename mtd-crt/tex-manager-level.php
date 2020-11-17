@@ -11,17 +11,19 @@
         <link href="../dependencies/fontawesome/css/font-awesome.min.css" rel="stylesheet">
           
         <!--Data Table-->
-        <link rel="stylesheet" href="../dependencies/DataTables/css/datatables.min.css">
-        <link rel="stylesheet" href="../dependencies/DataTables/css/datatables.css">
+        <!-- <link rel="stylesheet" href="../dependencies/DataTables/css/datatables.min.css"> -->
+        <!-- <link rel="stylesheet" href="../dependencies/DataTables/css/datatables.css"> -->
+        <link rel="stylesheet" href="../dependencies/DataTables/css/dataTables.bootstrap4.min.css">
 
        <style>
         label {font-weight:600; font-size: 12px;}
         select[multiple] { font-size: 12px; }
         .primary_table {background-color: rgb(31,78,120); color:white}
         .primary_table_footer {background-color: rgb(221,235,247);}
-        table thead th, tfoot th{font-size: 12px; text-align:center }
-        table thead  tr, td{font-size: 12px;}
-
+        /* table {table-layout:fixed} */
+        table thead th, tfoot th{font-size: 13px; width:2px;white-space:nowrap; }
+        table tbody  tr, td{font-size: 12px; }
+       
         td.details-control {background: url('../assets/images/plus.png') no-repeat center center; cursor: pointer; background-size: 17px; margin:auto;  }
         tr.shown td.details-control { background: url('../assets/images/minus.png') no-repeat center center; background-size: 17px; margin:auto;}
 
@@ -235,11 +237,11 @@
 
             <!-- table -->
 
-            <div class="wrap mt-4">
-                <table id="example" class="table table-sm table-hover " style="width:100%">
+            <div class="wrap  mt-4">
+                <table id="example" class="table table-sm" style="width:100%; ">
                     <thead class="primary_table">
                         <tr>
-                            <th></th>
+                            <th style="padding:1%;"></th>
                             <th>Team Level</th>
                             <th>Productivity</th>
                             <th>Occupancy</th>
@@ -267,7 +269,7 @@
                     </thead>
                     <tfoot class="primary_table_footer">
                         <tr>
-                            <th></th>
+                            <th ></th>
                             <th>Grand Total</th>
                             <th>73.7%</th>
                             <th>97.6%</th>
@@ -303,66 +305,69 @@
         <script src="../dependencies/popper/popper.min.js"></script>
         <script src="../dependencies/bootstrap-4.5.0/dist/js/bootstrap.min.js"></script>
 
-       <script src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
+       <script src="../dependencies/DataTables/js/jquery.dataTables.min.js"></script>
         <!-- <script src="../dependencies/DataTables/js/datatables.min.js"></script> -->
         <script>
         /* Formatting function for row details - modify as you need */
         function format ( d ) {
     // `d` is the original data object for the row
-    return '<div class="pb-3 pt-1"><table class="table table-sm table-bordered" style="width:100%;margin-left:1px">'+
-        '<thead>'+
-            '<tr>'+    
-            '    <th>Team Level</th>'+
-            '    <th>Productivity</th>'+
-            '    <th>Occupancy</th>'+
-            '    <th>Aux Use V. Staff Time</th>'+
-            '    <th>Handled Calls</th>'+
-            '    <th>OB Calls</th>'+
-            '    <th>CRT</th>'+
-            '    <th>Talk Time</th>'+
-            '    <th>Total ACW</th>'+
-            '    <th>ACW Idle</th>'+
-            '    <th>Hold</th>       '+                
-            '    <th>Outbound</th>'+
-            '    <th>OB %</th>'+
-            '    <th>Default</th>'+
-            '    <th>Stread</th>'+
-            '    <th>Coaching</th>'+
-            '    <th>Traning</th>'+
-            '    <th>Meeting</th>'+
-            '    <th>Break</th>'+
-            '    <th>Project</th>'+
-            '    <th>System</th>'+
-            '    <th>Aux 8</th>'+
-            '    <th>Aux 9</th>'+
-            '</tr>'+
-        '</thead>'+
-        '<tr>'+            
-            '<td>Alberto, Paolo B</td>'+
-            '<td>80.5%</td>'+
-            '<td>95.6%</td>'+
-            '<td>29.1%</td>'+
-            '<td>307</td>'+
-            '<td>27</td>'+
-            '<td>792</td>'+
-            '<td>662</td>'+
-            '<td>48</td>'+
-            '<td>28</td>'+
-            '<td>73</td>'+
-            '<td>9</td>'+
-            '<td>8.8%</td>'+
-            '<td>6:33:20</td>'+
-            '<td>6:33:20</td>'+
-            '<td>6:33:20</td>'+
-            '<td>6:33:20</td>'+
-            '<td>6:33:20</td>'+
-            '<td>6:33:20</td>'+
-            '<td>6:33:20</td>'+
-            '<td>6:33:20</td>'+
-            '<td>6:33:20</td>'+
-            '<td>6:33:20</td>'+
+    return '<table class="table table-sm table-condensed table-striped table-condensed" style="width: 100%; margin-left:12px; table-layout:fixed;">'+
+        // '<thead>'+
+        //     '<tr>'+    
+        //     '    <th>Team Level</th>'+
+        //     '    <th>Productivity</th>'+
+        //     '    <th>Occupancy</th>'+
+        //     '    <th>Aux Use V. Staff Time</th>'+
+        //     '    <th>Handled Calls</th>'+
+        //     '    <th>OB Calls</th>'+
+        //     '    <th>CRT</th>'+
+        //     '    <th>Talk Time</th>'+
+        //     '    <th>Total ACW</th>'+
+        //     '    <th>ACW Idle</th>'+
+        //     '    <th>Hold</th>       '+                
+        //     '    <th>Outbound</th>'+
+        //     '    <th>OB %</th>'+
+        //     '    <th>Default</th>'+
+        //     '    <th>Stread</th>'+
+        //     '    <th>Coaching</th>'+
+        //     '    <th>Traning</th>'+
+        //     '    <th>Meeting</th>'+
+        //     '    <th>Break</th>'+
+        //     '    <th>Project</th>'+
+        //     '    <th>System</th>'+
+        //     '    <th>Aux 8</th>'+
+        //     '    <th>Aux 9</th>'+
+        //     '</tr>'+
+        // '</thead>'+
+        '<tbody>'+
+        '<tr>'+           
+            '<td style="width:1%"></td>'+
+            '<td style="width:13%">Alberto, Paolo B</td>'+
+            '<td style="width:10%">80.5%</td>'+
+            '<td style="width:10%">95.6%</td>'+
+            '<td style="width:10%">29.1%</td>'+
+            '<td style="width:10%">307</td>'+
+            '<td style="width:10%">27</td>'+
+            '<td style="width:10%">792</td>'+
+            '<td style="width:10%">662</td>'+
+            '<td style="width:10%">48</td>'+
+            '<td style="width:10%">28</td>'+
+            '<td style="width:10%">73</td>'+
+            '<td style="width:10%">9</td>'+
+            '<td style="width:10%">8.8%</td>'+
+            '<td style="width:10%">6:33:20</td>'+
+            '<td style="width:10%">6:33:20</td>'+
+            '<td style="width:10%">6:33:20</td>'+
+            '<td style="width:10%">6:33:20</td>'+
+            '<td style="width:10%">6:33:20</td>'+
+            '<td style="width:10%">6:33:20</td>'+
+            '<td style="width:10%">6:33:20</td>'+
+            '<td style="width:10%">6:33:20</td>'+
+            '<td style="width:10%">6:33:20</td>'+
+            '<td style="width:10%">6:33:20</td>'+
         '</tr>'+      
-        '<tr>'+            
+        '<tr>'+      
+            '<td style="width:1%"></td>'+      
             '<td>Avendano, Ma. Louela C</td>'+
             '<td>80.5%</td>'+
             '<td>95.6%</td>'+
@@ -387,7 +392,8 @@
             '<td>6:33:20</td>'+
             '<td>6:33:20</td>'+
         '</tr>'+      
-        '<tr>'+            
+        '<tr>'+  
+            '<td style="width:1%"></td>'+          
             '<td>Bacho, Judy Ann A</td>'+
             '<td>80.5%</td>'+
             '<td>95.6%</td>'+
@@ -412,7 +418,8 @@
             '<td>6:33:20</td>'+
             '<td>6:33:20</td>'+
         '</tr>'+
-        '<tr>'+            
+        '<tr>'+  
+            '<td style="width:1%"></td>'+          
             '<td>Cueto, Elaine Isabel A</td>'+
             '<td>80.5%</td>'+
             '<td>95.6%</td>'+
@@ -438,8 +445,8 @@
             '<td>6:33:20</td>'+
         '</tr>'+
       
-       
-    '</table></div>';
+        '</tbody>'+      
+    '</table>';
 }
  
 $(document).ready(function() {
@@ -476,21 +483,21 @@ $(document).ready(function() {
             { "data": "aux_8" },
             { "data": "aux_9" }
         ],
-        "fnInitComplete": function(){
-                // Disable TBODY scoll bars
-                $('.dataTables_scrollBody').css({
-                    'overflow': 'hidden',
-                    'border': '0'
-                });
+        // "fnInitComplete": function(){
+        //         // Disable TBODY scoll bars
+        //         $('.dataTables_scrollBody').css({
+        //             'overflow': 'hidden',
+        //             'border': '0'
+        //         });
 
-                // Enable TFOOT scoll bars
-                $('.dataTables_scrollFoot').css('overflow', 'auto');
+        //         // Enable TFOOT scoll bars
+        //         $('.dataTables_scrollFoot').css('overflow', 'auto');
 
-                // Sync TFOOT scrolling with TBODY
-                $('.dataTables_scrollFoot').on('scroll', function () {
-                    $('.dataTables_scrollBody').scrollLeft($(this).scrollLeft());
-                });                    
-            },
+        //         // Sync TFOOT scrolling with TBODY
+        //         $('.dataTables_scrollFoot').on('scroll', function () {
+        //             $('.dataTables_scrollBody').scrollLeft($(this).scrollLeft());
+        //         });                    
+        //     },
         "order": [[1, 'asc']],
         responsive: true,
         "searching": false,
@@ -498,7 +505,9 @@ $(document).ready(function() {
         "info":     false,  
         "bLengthChange": false ,
         "paging": false,
-        "scrollX": "350px"
+        "sScrollX": "100%",
+        "sScrollXInner": "100%"    
+           
     } );
      
     // Add event listener for opening and closing details

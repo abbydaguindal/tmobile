@@ -12,7 +12,8 @@
 
     <!-- <link rel="stylesheet" href="../dependencies/DataTables/css/datatables.min.css">
     <link rel="stylesheet" href="../dependencies/DataTables/css/datatables.css"> -->
-    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.22/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="css/table.css">
     <style>
         td{
         font-size: 11px;
@@ -205,10 +206,10 @@
 
                                     <!--table-->
                                     <div class="card-body">
-                                        <table id="teamLvlTbl" class="table table-sm table-striped display nowrap">
+                                        <table id="teamLvlTbl" class="table table-sm table-striped table-bordered display nowrap">
                                         <thead class="text-light">
                                                     <tr>
-                                                            <th></th>
+                                                            <th style="padding:1%"></th>
                                                             <th>SR MANAGER V2</th>
                                                             <th>TEX Manager V2</th>
                                                             <th>SUP V2</th>
@@ -240,8 +241,8 @@
                                                     </tr>
                                                 </thead>
                                                 <tfoot class="text-light">
-                                                    <tr>
-                                                            <th></th>
+                                                    <tr >
+                                                            <th style="padding:1%"></th>
                                                             <th>SR MANAGER V2</th>
                                                             <th>TEX Manager V2</th>
                                                             <th>SUP V2</th>
@@ -281,41 +282,12 @@
         <script src="../dependencies/popper/popper.min.js"></script>
         <script src="../dependencies/bootstrap-4.5.0/dist/js/bootstrap.min.js"></script>
 
-        <script src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
+        <script src="js/table.js"></script>
         <script>
                 function format ( d ) {
                     // `d` is the original data object for the row
-                    return '<div class="pb-3 pt-1"><table class="table table-sm table-bordered">'+
-                        '<thead class="text-light">'+
-                            '<tr>'+    
-                                '<th>SR MANAGER V2</th>'+
-                                '<th>TEX Manager V2</th>'+
-                                '<th>SUP V2</th>'+
-                                '<th>Name</th>'+
-                                '<th>Emp ID</th>'+
-                                '<th>Scheduled Headcount</th>'+
-                                '<th>Total Infraction</th>'+
-                                '<th>Miss Shift</th>'+
-                                '<th>Late Arrival</th>'+
-                                '<th>Missing Intra-Shift</th>'+
-                                '<th>Early Departure</th>'+
-                                '<th>Total Aux</th>'+
-                                '<th>Default</th>'+
-                                '<th>Stread</th>'+
-                                '<th>Coaching</th>'+
-                                '<th>Training</th>'+
-                                '<th>Meeting</th>'+
-                                '<th>Break</th>'+
-                                '<th>Project</th>'+
-                                '<th>System Aux</th>'+
-                                '<th>Aux 8</th>'+
-                                '<th>TPUSA Meeting</th>'+
-                                '<th>Missed Shift (Hours)</th>'+
-                                '<th>Late Arrival (Hours)</th>'+
-                                '<th>Missing Intra-Shift (Hours)</th>'+
-                                '<th>Early Dep (Hours)</th>'+
-                            '</tr>'+
-                        '</thead>'+
+                    return '<div><table class="table table-sm table-striped table-bordered display nowrap">'+
+                       
                         '<tr>'+            
                             '<td>Gabriel, Juan Paulo M</td>'+
                             '<td>Alusitian, Idol R</td>'+
@@ -344,7 +316,7 @@
                             '<td>0</td>'+
                             '<td>1</td>'+
                         '</tr>'+
-                        '<tr>'+            
+                        '<tr >'+            
                             '<td>Lantin, Victor E</td>'+
                             '<td>Alusitian, Idol R</td>'+
                             '<td>Josef, Rodel D </td>'+
