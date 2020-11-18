@@ -56,7 +56,7 @@
                             <div class="row">
                                 <div class="col-sm-3 form-group">
                                     <label for="locationLabel">Location</label>
-                                    <select multiple  class="form-control" id="location">
+                                    <select   class="form-control" id="location">
                                         <option value="StayIn">Stay In</option>
                                         <option value="StayOut">Stay Out</option>
                                         <option value="StayOutTwo">Stay Out</option>
@@ -68,7 +68,7 @@
 
                                 <div class="col-sm-3 form-group">
                                     <label for="LOBLabel">SOM</label>
-                                    <select multiple  class="form-control" id="som">
+                                    <select   class="form-control" id="som">
                                         <option value="">Bote, Katrina D</option>
                                         <option value="">de Leon, Carlo Magno</option>
                                         <option value="">Gabriel, Juan Paolo M</option>
@@ -85,7 +85,7 @@
 
                                 <div class="col-sm-3 form-group">
                                     <label for="accmLabel">ACCM</label>
-                                    <select multiple  class="form-control" id="accm">
+                                    <select   class="form-control" id="accm">
                                         <option value="">Abriol Stephen M</option>
                                         <option value="">Alhambra Anna Milagrosa</option>
                                         <option value="">Alivar Damsel B</option>
@@ -103,7 +103,7 @@
                                 </div>
                                 <div class="col-sm-3 form-group">
                                     <label for="wsetLabel">WSET</label>
-                                    <select multiple  class="form-control" id="wset">
+                                    <select   class="form-control" id="wset">
                                     <option value="">--</option>
                                     <option value="">9/27/2020</option>                                   
                                     <option value="">10/4/2020</option>
@@ -119,7 +119,7 @@
 
                                 <div class="col-sm-4 form-group">
                                     <label for="communityLabel">Community</label>
-                                    <select multiple  class="form-control" id="community">
+                                    <select   class="form-control" id="community">
                                         <option value="charleston_01">Charleston_01</option>
                                         <option value="charleston_02">Charleston_02</option>
                                         <option value="charleston_03">Charleston_03</option>
@@ -169,7 +169,7 @@
 
                                 <div class="col-sm-4 form-group">
                                     <label for="updatedLOBLabel">Updated LOB</label>
-                                    <select multiple  class="form-control" id="updateLOB">
+                                    <select   class="form-control" id="updateLOB">
                                         <option value="accountExpert">Account Expert</option>
                                         <option value="accountNonMarket">Account Non-Market</option>
                                         <option value="techExpert">Tech Expert</option>
@@ -178,7 +178,7 @@
                                 </div>
                                 <div class="col-sm-4 form-group">
                                     <label for="supervisorLabel">Supervisor</label>
-                                    <select multiple  class="form-control" id="supervisor">
+                                    <select   class="form-control" id="supervisor">
                                         <option value="">Abengoza IV, Bernardo S</option>
                                         <option value="">Acopicop, Janin E</option>
                                         <option value="">Acopicop, John Patrick Y</option>
