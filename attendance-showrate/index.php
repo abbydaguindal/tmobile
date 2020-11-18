@@ -40,7 +40,7 @@
                         <div class="row">                            
                             <div class="col-sm-4 form-group">
                                 <label for="locationLabel">Location</label>
-                                <select multiple  class="form-control" id="location">
+                                <select class="form-control" id="location">
                                     <option value="StayIn">Stay In</option>
                                     <option value="StayOut">Stay Out</option>
                                     <option value="StayOutTwo">Stay Out</option>
@@ -50,7 +50,7 @@
                             </div>  
                             <div class="col-sm-4 form-group">
                                 <label for="weekstartLabel">Weekstart</label>
-                                <select multiple  class="form-control" id="weekstart">
+                                <select class="form-control" id="weekstart">
                                     <option value="">9/27/2020</option>                                   
                                     <option value="">10/4/2020</option>
                                     <option value="">10/11/2020</option>
@@ -60,7 +60,7 @@
                             </div>
                             <div class="col-sm-4 form-group">
                                 <label for="srManagerLabel">Sr. Manager</label>
-                                <select multiple  class="form-control" id="srManager">
+                                <select class="form-control" id="srManager">
                                     <option value="">Tolentino Robertson</option>                                     
                                     <option value="">Mangahas, Arnel D</option>
                                     <option value="">Lorete, Christian Ronel L</option>
@@ -75,7 +75,7 @@
                         <div class="row">
                             <div class="col-sm-4 form-group">
                                 <label for="supervisorLabel">Supervisor</label>
-                                    <select multiple  class="form-control" id="supervisor">
+                                    <select class="form-control" id="supervisor">
                                         <option value="">Abengoza IV, Bernardo S</option>
                                         <option value="">Acopicop, Janin E</option>
                                         <option value="">Acopicop, John Patrick Y</option>
@@ -95,7 +95,7 @@
                             </div> 
                             <div class="col-sm-4 form-group">
                                 <label for="accmLabel">ACCM</label>
-                                <select multiple  class="form-control" id="accm">
+                                <select class="form-control" id="accm">
                                     <option value="">Abriol Stephen M</option>
                                     <option value="">Alhambra Anna Milagrosa</option>
                                     <option value="">Alivar Damsel B</option>
@@ -112,7 +112,7 @@
                             </div>
                             <div class="col-sm-4 form-group">
                                 <label for="phasesLabel">Phases</label>
-                                <select multiple  class="form-control" id="phases">
+                                <select class="form-control" id="phases">
                                    <option value="tccWK2">TCC WK2</option>    
                                    <option value="tccWK1">TCC WK1</option> 
                                    <option value="supervisor">Supervisor</option>                                   
@@ -141,39 +141,35 @@
             <div class="card-header">
                 <h3 class="card-title text-center mb-0">T-MOBILE VERTIS NORTH CONSOLIDATED ATTENDANCE</h3>
             </div>
-            <div class="card-body">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="card">
-                            <div class="card-body">
-                                <div id="container">
-                                    <canvas id="daily_Attendance"></canvas>
-                                </div>
+            <div class="row p-3">
+                <div class="col-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <div id="container">
+                                <canvas id="daily_Attendance"></canvas>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="row">
-            <div class="col-6">
-                <div class="card">                    
-                    <div class="card-body">
-                        <div id="container">
-                            <canvas id="day_Of_Week"></canvas>
+                <div class="col-4">
+                    <div class="card">                    
+                        <div class="card-body">
+                            <div id="container">
+                                <canvas id="day_Of_Week"></canvas>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-6">
-                <div class="card">                    
-                    <div class="card-body">
-                        <div id="container">
-                            <canvas id="week_Of_Week"></canvas>
+                <div class="col-4">
+                    <div class="card">                    
+                        <div class="card-body">
+                            <div id="container">
+                                <canvas id="week_Of_Week"></canvas>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-            </div>
+            </div>     
         </div>
         
       

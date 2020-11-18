@@ -41,10 +41,18 @@ var myChart = new Chart(ctx, {
                    callback: function(value){return value+ "%"}
                 },  
 				   scaleLabel: {
-                   display: true,
+                   display: false,
                    labelString: "Percentage"
+                },
+                gridLines: {
+                    display:false
                 }
-            }]           
+            }],
+        xAxes: [{            
+                gridLines: {
+                    display:true
+                }
+            }]             
     },    
     tooltips: {
         "enabled": false
@@ -55,8 +63,8 @@ var myChart = new Chart(ctx, {
      title: {
         display: true,
         text: 'Daily Attendance Showrate Trend',
-        position: 'left',
-        fontSize: 18
+        position: 'top',
+        fontSize: 14
     }
   }
 });
@@ -102,18 +110,18 @@ var myChart = new Chart(ctx, {
                    callback: function(value){return value+ "%"}
                 },  
 				   scaleLabel: {
-                   display: true,
+                   display: false,
                    labelString: "Percentage"
                 },
                 gridLines: {
-                    display:true
+                    display:false
                 }
             }],
             xAxes: [{                
-                    gridLines: {
-                        display:false
-                    }
-                }]
+                gridLines: {
+                    display:true
+                }
+            }]
     },
     
     tooltips: {
@@ -126,7 +134,7 @@ var myChart = new Chart(ctx, {
         display: true,
         text: 'DAY OF WEEK TREND - ABS %',
         position: 'top',
-        fontSize: 18
+        fontSize: 14
     }
   }
 });
@@ -173,13 +181,16 @@ var myChart = new Chart(ctx, {
                    callback: function(value){return value+ "%"}
                 },  
 				   scaleLabel: {
-                   display: true,
+                   display: false,
                    labelString: "Percentage"
+                },
+                gridLines: {
+                    display:false
                 }
             }],
             xAxes: [{                
                 gridLines: {
-                    display:false
+                    display:true
                 }
             }]
     },
@@ -194,7 +205,7 @@ var myChart = new Chart(ctx, {
         display: true,
         text: 'WEEK OVER WEEK ABS %',
         position: 'top',
-        fontSize: 18
+        fontSize: 14
     }
   }
 });

@@ -265,8 +265,8 @@
     <script src="../dependencies/jquery/jquery-3.5.1.js"></script>
     <script src="../dependencies/popper/popper.min.js"></script>
     <script src="../dependencies/bootstrap-4.5.0/dist/js/bootstrap.min.js"></script>
-
-    <script src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
+    <!--datatable  -->
+    <script src="../dependencies/DataTables/DataTables-1.10.22/js/jquery.dataTables.min.js"></script>
     
     <script>
          /* Formatting function for row details - modify as you need */
