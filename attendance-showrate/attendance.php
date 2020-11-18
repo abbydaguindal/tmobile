@@ -207,12 +207,14 @@
                 <div class="card-header">
                     <h3 class="card-title text-center mb-0">TEAM LEVEL ATTENDANCE SHOWRATE - OCTOBER MTD</h3>
                 </div>
-                <div class="card-body">
+                <div class="card-body">                
                     <table id="example" class="table table-sm table-hover" style="width:100%">
                         <thead class="bg-pink-head">
                             <tr>
                                 <th style="width: 50px;"></th>
                                 <th>Agent Level | Showrate</th>
+                                <th>Emp ID</th>
+                                <th>Name</th>
                                 <th>10/1/2020</th>
                                 <th>10/2/2020</th>
                                 <th>10/3/2020</th>
@@ -234,26 +236,28 @@
                         <tfoot class="bg-footer">
                             <tr>
                                 <th style="width: 50px;"></th>
-                                <th>Grand Total</th>
-                                <th>87.4%</th>
-                                <th>87.2%</th>
-                                <th>89.6%</th>
-                                <th>88.3</th>
-                                <th>87.4%</th>
-                                <th>87.2%</th>
-                                <th>89.6%</th>
-                                <th>88.3</th>
-                                <th>87.4%</th>
-                                <th>87.2%</th>
-                                <th>89.6%</th>
-                                <th>88.3</th>
-                                <th>87.4%</th>
-                                <th>87.2%</th>
-                                <th>89.6%</th>
-                                <th>88.3</th>                                
+                                <th class="text-center">Grand Total</th>
+                                <th></th>
+                                <th></th>
+                                <th class="text-center">87.4%</th>
+                                <th class="text-center">87.2%</th>
+                                <th class="text-center">89.6%</th>
+                                <th class="text-center">88.3</th>
+                                <th class="text-center">87.4%</th>
+                                <th class="text-center">87.2%</th>
+                                <th class="text-center">89.6%</th>
+                                <th class="text-center">88.3</th>
+                                <th class="text-center">87.4%</th>
+                                <th class="text-center">87.2%</th>
+                                <th class="text-center">89.6%</th>
+                                <th class="text-center">88.3</th>
+                                <th class="text-center">87.4%</th>
+                                <th class="text-center">87.2%</th>
+                                <th class="text-center">89.6%</th>
+                                <th class="text-center">88.3</th>                                
                             </tr>
                         </tfoot>
-                    </table>
+                    </table>                   
                 </div>
             </div>        
         
@@ -272,35 +276,14 @@
          /* Formatting function for row details - modify as you need */
  function format ( d ) {
     // `d` is the original data object for the row
-    return '<table class="table table-sm table-bordered display nowarap">'+
-        '<thead class="bg-pink-head">'+
-            '<tr>'+        
-            '    <th>Emp ID</th>'+
-            '    <th>Name</th>'+           
-            '    <th>10/1/2020</th>'+ 
-            '    <th>10/2/2020</th>'+ 
-            '    <th>10/3/2020</th>'+ 
-            '    <th>10/4/2020</th>'+ 
-            '    <th>10/5/2020</th>'+ 
-            '    <th>10/6/2020</th>'+ 
-            '    <th>10/7/2020</th>'+ 
-            '    <th>10/8/2020</th>'+ 
-            '    <th>10/9/2020</th>'+ 
-            '    <th>10/10/2020</th>'+ 
-            '    <th>10/11/2020</th>'+ 
-            '    <th>10/12/2020</th>'+ 
-            '    <th>10/13/2020</th>'+ 
-            '    <th>10/14/2020</th>'+ 
-            '    <th>10/15/2020</th>'+ 
-            '    <th>Grand Total</th>'+ 
-            '</tr>'+
-        '</thead>'+
+    return '<table class="table table-sm display nowrap" style="margin-left: 14em">'+
+        
         '<tr>'+            
-            '<td>3500391</td>'+
-            '<td>Mendoza, Judy Ann M</td>'+             
+            '<td width="5em">3500391</td>'+
+            '<td width="150em">Mendoza, Judy Ann M</td>'+             
             '<td>100.0%</td>'+  
             '<td>100.0%</td>'+
-            '<td>100.0%</td>'+
+            '<td>50.0%</td>'+
             '<td>100.0%</td>'+ 
             '<td>100.0%</td>'+  
             '<td>100.0%</td>'+
@@ -316,8 +299,8 @@
             '<td>100.0%</td>'+ 
         '</tr>'+
         '<tr>'+            
-            '<td>6381317</td>'+
-            '<td>Abuda, Angela Marie J.</td>'+ 
+            '<td width="5em">6381317</td>'+
+            '<td width="150em">Abuda, Angela Marie J.</td>'+ 
             '<td>100.0%</td>'+  
             '<td>100.0%</td>'+
             '<td>100.0%</td>'+
@@ -349,6 +332,8 @@ $(document).ready(function() {
                 "defaultContent": ''
             },
             { "data": "showrate" },
+            { "data": "empid" },
+            { "data": "name" },
             { "data": "attendanceDateOne" },
             { "data": "attendanceDateTwo" },
             { "data": "attendanceDateThree" },
@@ -381,6 +366,7 @@ $(document).ready(function() {
      
     // Add event listener for opening and closing details
     $('#example tbody').on('click', 'td.details-control', function () {
+       
         var tr = $(this).closest('tr');
         var row = table.row( tr );
  
