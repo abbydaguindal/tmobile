@@ -11,11 +11,12 @@
         <link rel="stylesheet" href="main.css">
                    
         <!--Fontawesome-->        
-        <link href="../dependencies/fontawesome/css/font-awesome.min.css" rel="stylesheet">
+        <link href="../dependencies/fontawesome-new/css/all.css" rel="stylesheet">
           
         <!--Data Table-->
-        <link rel="stylesheet" href="../dependencies/DataTables/css/datatables.min.css">
-        <link rel="stylesheet" href="../dependencies/DataTables/css/datatables.css">
+        <!-- <link rel="stylesheet" href="../dependencies/DataTables/css/datatables.min.css">
+        <link rel="stylesheet" href="../dependencies/DataTables/css/datatables.css"> -->
+        <link rel="stylesheet" href="https://cdn.datatables.net/1.10.22/css/dataTables.bootstrap4.min.css">
 
     <!-- datatable -->
     
@@ -207,8 +208,8 @@
                 <div class="card-header">
                     <h3 class="card-title text-center mb-0">TEAM LEVEL ATTENDANCE SHOWRATE - OCTOBER MTD</h3>
                 </div>
-                <div class="card-body">                
-                    <table id="example" class="table table-sm table-hover" style="width:100%">
+                <div class="card-body">
+                    <table id="example" class="table table-sm" style="width:100%;width:1px;white-space:nowrap; ">
                         <thead class="bg-pink-head">
                             <tr>
                                 <th style="width: 50px;"></th>
@@ -233,31 +234,120 @@
                                 <th>Grand Total</th>                        
                             </tr>
                         </thead>
+                        <tbody>
+                           
+                            <tr>
+                                <td><button type="button" class="btn btn-sm btn-success" id="btn1"><i class="fas fa-plus-circle"></i></button></td>
+                                <td>Acopicop John Patrick Y</td>
+                                <td data-number="row1-1"></td>
+                                <td data-number="row1-1"></td>
+                                <td data-number="row1-1">100%</td>
+                                <td data-number="row1-1">100%</td>
+                                <td data-number="row1-1">50%</td>
+                                <td data-number="row1-1"></td>
+                                <td data-number="row1-1"></td>
+                                <td data-number="row1-1"></td>
+                                <td data-number="row1-1"></td>
+                                <td data-number="row1-1"></td>
+                                <td data-number="row1-1"></td>
+                                <td data-number="row1-1"></td>
+                                <td data-number="row1-1"></td>
+                                <td data-number="row1-1"></td>
+                                <td data-number="row1-1"></td>
+                                <td data-number="row1-1"></td>
+                                <td data-number="row1-1"></td>
+                                <td data-number="row1-1"></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td data-number="row1">3500391</td>
+                                <td data-number="row1">Mendoza, Judy Ann M</td>
+                                <td data-number="row1">100.0%</td>
+                                <td data-number="row1">100.0%</td>
+                                <td data-number="row1">100.0%</td>
+                                <td data-number="row1">100.0%</td>
+                                <td data-number="row1">100.0%</td>
+                                <td data-number="row1">100.0%</td>
+                                <td data-number="row1">100.0%</td>
+                                <td data-number="row1">100.0%</td>
+                                <td data-number="row1">100.0%</td>
+                                <td data-number="row1">100.0%</td>
+                                <td data-number="row1">100.0%</td>
+                                <td data-number="row1">100.0%</td>
+                                <td data-number="row1">100.0%</td>
+                                <td data-number="row1">100.0%</td>
+                                <td data-number="row1">100.0%</td>
+                                <td data-number="row1">100.0%</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td data-number="row1">3500391</td>
+                                <td data-number="row1">Abuda, Angela Marie J.</td>
+                                <td data-number="row1">100.0%</td>
+                                <td data-number="row1">100.0%</td>
+                                <td data-number="row1">100.0%</td>
+                                <td data-number="row1">100.0%</td>
+                                <td data-number="row1">100.0%</td>
+                                <td data-number="row1">100.0%</td>
+                                <td data-number="row1">100.0%</td>
+                                <td data-number="row1">100.0%</td>
+                                <td data-number="row1">100.0%</td>
+                                <td data-number="row1">100.0%</td>
+                                <td data-number="row1">100.0%</td>
+                                <td data-number="row1">100.0%</td>
+                                <td data-number="row1">100.0%</td>
+                                <td data-number="row1">100.0%</td>
+                                <td data-number="row1">100.0%</td>
+                                <td data-number="row1">100.0%</td>
+                            </tr>
+                            <tr>
+                                <td><button type="button" class="btn btn-sm btn-success" id="btn2"><i class="fas fa-plus-circle"></i></button></td>
+                                <td>Aldaba, Joy Therese</td>
+                                <td data-number="row2">3500391</td>
+                                <td data-number="row2">Cabajar, Lhenard</td>
+                                <td data-number="row2">100.0%</td>
+                                <td data-number="row2">100.0%</td>
+                                <td data-number="row2">100.0%</td>
+                                <td data-number="row2">100.0%</td>
+                                <td data-number="row2">100.0%</td>
+                                <td data-number="row2">100.0%</td>
+                                <td data-number="row2">100.0%</td>
+                                <td data-number="row2">100.0%</td>
+                                <td data-number="row2">100.0%</td>
+                                <td data-number="row2">100.0%</td>
+                                <td data-number="row2">100.0%</td>
+                                <td data-number="row2">100.0%</td>
+                                <td data-number="row2">100.0%</td>
+                                <td data-number="row2">100.0%</td>
+                                <td data-number="row2">100.0%</td>
+                                <td data-number="row2">100.0%</td>
+                            </tr>
+                        </tbody>
                         <tfoot class="bg-footer">
                             <tr>
                                 <th style="width: 50px;"></th>
-                                <th class="text-center">Grand Total</th>
-                                <th></th>
-                                <th></th>
-                                <th class="text-center">87.4%</th>
-                                <th class="text-center">87.2%</th>
-                                <th class="text-center">89.6%</th>
-                                <th class="text-center">88.3</th>
-                                <th class="text-center">87.4%</th>
-                                <th class="text-center">87.2%</th>
-                                <th class="text-center">89.6%</th>
-                                <th class="text-center">88.3</th>
-                                <th class="text-center">87.4%</th>
-                                <th class="text-center">87.2%</th>
-                                <th class="text-center">89.6%</th>
-                                <th class="text-center">88.3</th>
-                                <th class="text-center">87.4%</th>
-                                <th class="text-center">87.2%</th>
-                                <th class="text-center">89.6%</th>
-                                <th class="text-center">88.3</th>                                
+                                <th>Grand Total</th>
+                                <th>87.4%</th>
+                                <th>87.2%</th>
+                                <th>89.6%</th>
+                                <th>88.3</th>
+                                <th>87.4%</th>
+                                <th>87.2%</th>
+                                <th>89.6%</th>
+                                <th>88.3</th>
+                                <th>87.4%</th>
+                                <th>87.2%</th>
+                                <th>89.6%</th>
+                                <th>88.3</th>
+                                <th>87.4%</th>
+                                <th>87.2%</th>
+                                <th>89.6%</th>
+                                <th>88.3</th>                                
                             </tr>
                         </tfoot>
-                    </table>                   
+                    </table>
                 </div>
             </div>        
         
@@ -273,115 +363,34 @@
     <script src="../dependencies/DataTables/DataTables-1.10.22/js/jquery.dataTables.min.js"></script>
     
     <script>
-         /* Formatting function for row details - modify as you need */
- function format ( d ) {
-    // `d` is the original data object for the row
-    return '<table class="table table-sm display nowrap" style="margin-left: 14em">'+
-        
-        '<tr>'+            
-            '<td width="5em">3500391</td>'+
-            '<td width="150em">Mendoza, Judy Ann M</td>'+             
-            '<td>100.0%</td>'+  
-            '<td>100.0%</td>'+
-            '<td>50.0%</td>'+
-            '<td>100.0%</td>'+ 
-            '<td>100.0%</td>'+  
-            '<td>100.0%</td>'+
-            '<td>100.0%</td>'+
-            '<td>100.0%</td>'+ 
-            '<td>100.0%</td>'+  
-            '<td>100.0%</td>'+
-            '<td>100.0%</td>'+
-            '<td>100.0%</td>'+          
-            '<td>100.0%</td>'+  
-            '<td>100.0%</td>'+
-            '<td>100.0%</td>'+
-            '<td>100.0%</td>'+ 
-        '</tr>'+
-        '<tr>'+            
-            '<td width="5em">6381317</td>'+
-            '<td width="150em">Abuda, Angela Marie J.</td>'+ 
-            '<td>100.0%</td>'+  
-            '<td>100.0%</td>'+
-            '<td>100.0%</td>'+
-            '<td>100.0%</td>'+ 
-            '<td>100.0%</td>'+  
-            '<td>100.0%</td>'+
-            '<td>100.0%</td>'+
-            '<td>100.0%</td>'+ 
-            '<td>100.0%</td>'+  
-            '<td>100.0%</td>'+
-            '<td>100.0%</td>'+
-            '<td>100.0%</td>'+          
-            '<td>100.0%</td>'+  
-            '<td>100.0%</td>'+
-            '<td>100.0%</td>'+
-            '<td>100.0%</td>'+              
-        '</tr>'+                
-    '</table>';
-}
- 
-$(document).ready(function() {
-    var table = $('#example').DataTable( {
-        "ajax": "ajax/data.txt",
-        "columns": [
-            {
-                "className":      'details-control',
-                "orderable":      false,
-                "data":           null,
-                "defaultContent": ''
-            },
-            { "data": "showrate" },
-            { "data": "empid" },
-            { "data": "name" },
-            { "data": "attendanceDateOne" },
-            { "data": "attendanceDateTwo" },
-            { "data": "attendanceDateThree" },
-            { "data": "attendanceDateFour" },
-            { "data": "attendanceDateFive" },
-            { "data": "attendanceDateSix" },
-            { "data": "attendanceDateSeven" },
-            { "data": "attendanceDateEight" },
-            { "data": "attendanceDateNine" },
-            { "data": "attendanceDateTen" },
-            { "data": "attendanceDateEleven" },
-            { "data": "attendanceDateTwelve" },
-            { "data": "attendanceDateThirteen" },
-            { "data": "attendanceDateFourteen" },
-            { "data": "attendanceDateFifteen" },
-            { "data": "total" }
-        ],
-        "order": [[1, 'asc']],
-         responsive: true,
-        "searching": false,
-        "ordering": true,
-        "info":     false,  
-        "bLengthChange": false ,
-        "paging": false,
-        "scrollY":        "40vh",
-        "scrollCollapse": true,
-        "scrollX": true      
-        
-    } );
-     
-    // Add event listener for opening and closing details
-    $('#example tbody').on('click', 'td.details-control', function () {
-       
-        var tr = $(this).closest('tr');
-        var row = table.row( tr );
- 
-        if ( row.child.isShown() ) {
-            // This row is already open - close it
-            row.child.hide();
-            tr.removeClass('shown');
-        }
-        else {
-            // Open this row
-            row.child( format(row.data()) ).show();
-            tr.addClass('shown');
-        }
-    } );
-});
+         $(document).ready(function() {
+                var table = $('#example').DataTable( {                  
+                    "order": [[1, 'asc']],
+                     responsive: true,
+                    "searching": false,
+                    "ordering": false,
+                    "info":     false,  
+                    "bLengthChange": false ,
+                    "paging": false,
+                    "scrollY":        "40vh",
+                    "scrollCollapse": true,
+                    "scrollX": true    
+                });               
+        });
+
+    
+        $('#btn1').click(function(){    
+            $(this).toggleClass('btn-success btn-danger');   
+            $(this).find('i').toggleClass('fa-plus-circle fa-minus-circle')                                  
+            $("[data-number='row1']").toggle()
+            
+        });
+
+        $('#btn2').click(function(){    
+            $(this).toggleClass('btn-success btn-danger');   
+            $(this).find('i').toggleClass('fa-plus-circle fa-minus-circle')
+            $("[data-number='row2']").toggle();          
+        });
     </script>
 </body>
 </html>
